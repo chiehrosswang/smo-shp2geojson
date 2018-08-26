@@ -14,7 +14,7 @@ summary(roads.latlng) #proj4string:[+proj=longlat +ellps=WGS84]
 # Highway System roads (ROAD_STATU == "02")
 roads.latlng_02 <- roads.latlng %>%
   filter(ROAD_STATU == "02")
-road_status_02 <- geojson_json(roads.latlng_02) # convert shp to GeoJSON
+road_status_02 <- geojson_json(roads.latlng_02, digits = 8) # convert shp to GeoJSON
 geojson_write(road_status_02, file = "./road_status_02.geojson") # write file
 
 # Create a layer with active on SHS ("02"), active 
@@ -23,5 +23,5 @@ roads.latlng_02_07_09 <- roads.latlng %>%
   filter(ROAD_STATU == "02" | 
            ROAD_STATU == "07" | 
            ROAD_STATU == "09")
-road_status_02_07_09 <- geojson_json(roads.latlng_02_07_09) # convert shp to GeoJSON
+road_status_02_07_09 <- geojson_json(roads.latlng_02_07_09, digits = 8) # convert shp to GeoJSON
 geojson_write(road_status_02_07_09, file = "./road_status_02_07_09.geojson") # write file
