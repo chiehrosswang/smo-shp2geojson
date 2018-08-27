@@ -6,9 +6,10 @@ library(geojsonio)
 roads <- readOGR('./Shapefiles/road_status.shp', 'road_status')
 summary(roads) #proj4string:[+proj=utm +zone=17 +datum=NAD83 +units=m ...
 
-# Project layer to GCS (latlng)
+# Project layer to EPSG:4269 (proj4string:[+proj=longlat +init=epsg:4269 ...
+#                             +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0])
 roads.latlng <- spTransform(roads, CRS("+proj=longlat +init=epsg:4269"))
-summary(roads.latlng) #proj4string:[+proj=longlat +ellps=GRS80]
+summary(roads.latlng)
 
 
 # Create a layer with active on Florida State 
