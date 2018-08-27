@@ -3,12 +3,13 @@ library(spdplyr)
 library(geojsonio)
 
 # Load shapefile
-roads <- readOGR('./Data/road_status.shp', 'road_status')
+roads <- readOGR('./Shapefiles/road_status.shp', 'road_status')
 summary(roads) #proj4string:[+proj=utm +zone=17 +datum=NAD83 +units=m ...
 
 # Project layer to GCS (latlng)
-roads.latlng <- spTransform(roads, CRS("+proj=longlat"))
-summary(roads.latlng) #proj4string:[+proj=longlat +ellps=WGS84]
+roads.latlng <- spTransform(roads, CRS("+proj=longlat +ellps=GRS80"))
+summary(roads.latlng) #proj4string:[+proj=longlat +ellps=GRS80]
+
 
 # Create a layer with active on Florida State 
 # Highway System roads (ROAD_STATU == "02")
