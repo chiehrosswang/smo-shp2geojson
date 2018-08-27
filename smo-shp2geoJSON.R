@@ -7,7 +7,7 @@ roads <- readOGR('./Shapefiles/road_status.shp', 'road_status')
 summary(roads) #proj4string:[+proj=utm +zone=17 +datum=NAD83 +units=m ...
 
 # Project layer to GCS (latlng)
-roads.latlng <- spTransform(roads, CRS("+proj=longlat +ellps=GRS80"))
+roads.latlng <- spTransform(roads, CRS("+proj=longlat +init=epsg:4269"))
 summary(roads.latlng) #proj4string:[+proj=longlat +ellps=GRS80]
 
 
