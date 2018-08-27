@@ -1,0 +1,15 @@
+*
+*.*
+
+!*.R
+!*.md
+!*.xsl
+!*.dbf
+!*.lyr
+!*.prj
+!*.sbn
+!*.sbx
+!*.shp
+!*.xml
+!*.shx
+!*.geojson
