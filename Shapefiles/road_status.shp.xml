@@ -3,13 +3,13 @@
 <metadata xml:lang="en">
 	<Esri>
 		<MetaID>{AE9A3451-A58A-4E61-AC0B-0F1DB19CB870}</MetaID>
-		<CreaDate>20180818</CreaDate>
+		<CreaDate>20190817</CreaDate>
 		<CreaTime>10:02 AM EST</CreaTime>
 		<SyncOnce>FALSE</SyncOnce>
-		<SyncDate>20180818</SyncDate>
-		<SyncTime>09330900</SyncTime>
-		<ModDate>20180818</ModDate>
-		<ModTime>09330900</ModTime>
+		<SyncDate>20190817</SyncDate>
+		<SyncTime>10113200</SyncTime>
+		<ModDate>20190817</ModDate>
+		<ModTime>10113200</ModTime>
 		<Sync>TRUE</Sync>
 		<DataProperties>
 			<itemProps>
@@ -21,7 +21,7 @@
 					<northBL Sync="TRUE">3447923.808261</northBL>
 					<exTypeCode Sync="TRUE">1</exTypeCode>
 				</nativeExtBox>
-				<itemSize Sync="TRUE">9.075</itemSize>
+				<itemSize Sync="TRUE">9.302</itemSize>
 				<itemLocation>
 					<linkage Sync="TRUE">file://\\DCS-DOT-WS08\D$\temp\Shapes\road_status.shp</linkage>
 					<protocol Sync="TRUE">Local Area Network</protocol>
@@ -42,14 +42,14 @@
 		<native Sync="TRUE">Microsoft Windows Vista Version 6.1 (Build 7601) Service Pack 1; ESRI ArcCatalog 9.3.1.3000</native>
 		<descript>
 			<langdata Sync="TRUE">en</langdata>
-			<abstract>The Road Status feature class shows segment road status along a roadway as derived from event mapping Feature 140, characteristic STATEXPT from the FDOT Roadway Characteristics Inventory data.</abstract>
+			<abstract>The Road Status feature class shows segment road status along a roadway as derived from event mapping Feature 140, characteristic STATEXPT from the FDOT Roadway Characteristics Inventory data. This data represents the information collected and reported as of the most recent inventory performed and may not reflect the current conditions.</abstract>
 			<purpose>The FDOT GIS Road Status feature class shows road segment status along Florida roadways. Roadway status is designated by a number of 2 character codes. Examples include 02 Active on the SHS, 04 Inactive, 09 Active Off the SHS, etc. This information is required for all roadways in RCI.</purpose>
 		</descript>
 		<citation>
 			<citeinfo>
 				<origin> Florida Department of Transportation, Transportation Data &amp; Analytics Office (TDA) 
 </origin>
-				<pubdate>20180818</pubdate>
+				<pubdate>20190817</pubdate>
 				<title>Road Status</title>
 				<ftname Sync="TRUE">road_status</ftname>
 				<geoform Sync="TRUE">vector digital data</geoform>
@@ -64,7 +64,7 @@
 			<current>Data are valid from the publication date until a new feature class is published.  This dataset is updated every Saturday.</current>
 			<timeinfo>
 				<sngdate>
-					<caldate>20180818</caldate>
+					<caldate>20190817</caldate>
 					<time>unknown</time>
 				</sngdate>
 			</timeinfo>
@@ -229,7 +229,7 @@
 	</distinfo>
 	<spdoinfo>
 		<direct Sync="TRUE">Vector</direct>
-		<ptvctinf><esriterm><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="3" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">16728</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+		<ptvctinf><esriterm><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="3" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">17088</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
 	<spref>
 		<horizsys>
 			<cordsysn>
@@ -259,7 +259,7 @@
 			<enttyp>
 				<enttypl Sync="TRUE">road_status</enttypl>
 				<enttypt Sync="TRUE">Feature Class</enttypt>
-				<enttypc Sync="TRUE">16728</enttypc>
+				<enttypc Sync="TRUE">17088</enttypc>
 				<enttypd>Status of the roadway.  RCI designation - STATEXPT.</enttypd>
 				<enttypds>Florida Department of Transportation, Transportation Data &amp; Analytics Office</enttypds>
 			</enttyp>
@@ -1198,7 +1198,7 @@
 				<procdesc>This dataset was created using ESRI event mapping.  The route system is the Transportation Data and Analytics' linear referencing system (LRS).  The event source data are from the roadway table in Oracle.  The query used to generate the road_status shapefile is:
 select Shape,ROADWAY,ROAD_STATUS,BEGIN_POST,END_POST from roadway_Events</procdesc>
 				<procsv>ESRI ArcObjects</procsv>
-				<procdate>20180818</procdate>
+				<procdate>20190817</procdate>
 			</procstep>
 		</lineage>
 	</dataqual>
@@ -1297,7 +1297,7 @@ select Shape,ROADWAY,ROAD_STATUS,BEGIN_POST,END_POST from roadway_Events</procde
 			<onLineSrc>
 				<linkage>https://ftp.fdot.gov/file/d/FTP/FDOT/co/planning/transtat/gis/shapefiles/road_status.zip</linkage>
 			</onLineSrc>
-			<transSize Sync="TRUE">9.075</transSize>
+			<transSize Sync="TRUE">9.302</transSize>
 		</distTranOps>
 		<distFormat>
 			<formatName Sync="TRUE">Shapefile</formatName>
@@ -1307,7 +1307,7 @@ select Shape,ROADWAY,ROAD_STATUS,BEGIN_POST,END_POST from roadway_Events</procde
 		<idCitation>
 			<resTitle>Road Status</resTitle>
 			<date>
-				<pubDate>20180818</pubDate>
+				<pubDate>20190817</pubDate>
 			</date>
 			<citRespParty>
 				<rpOrgName>Florida Department of Transportation, Transportation Data &amp; Analytics Office (TDA)</rpOrgName>
@@ -1324,7 +1324,7 @@ select Shape,ROADWAY,ROAD_STATUS,BEGIN_POST,END_POST from roadway_Events</procde
 				</PresFormCd>
 			</presForm>
 		</idCitation>
-		<idAbs>The Road Status feature class shows segment road status along a roadway as derived from event mapping Feature 140, characteristic STATEXPT from the FDOT Roadway Characteristics Inventory data.</idAbs>
+		<idAbs>The Road Status feature class shows segment road status along a roadway as derived from event mapping Feature 140, characteristic STATEXPT from the FDOT Roadway Characteristics Inventory data. This data represents the information collected and reported as of the most recent inventory performed and may not reflect the current conditions.</idAbs>
 		<idPurp>The FDOT GIS Road Status feature class shows road segment status along Florida roadways. Roadway status is designated by a number of 2 character codes. Examples include 02 Active on the SHS, 04 Inactive, 09 Active Off the SHS, etc. This information is required for all roadways in RCI.</idPurp>
 		<idStatus>
 			<ProgCd value="001"/>
@@ -1421,7 +1421,7 @@ select Shape,ROADWAY,ROAD_STATUS,BEGIN_POST,END_POST from roadway_Events</procde
 				<TempExtent>
 					<exTemp>
 						<TM_Instant>
-							<tmPosition time="unknown">20180818</tmPosition>
+							<tmPosition time="unknown">20190817</tmPosition>
 						</TM_Instant>
 					</exTemp>
 				</TempExtent>
@@ -1460,7 +1460,7 @@ select Shape,ROADWAY,ROAD_STATUS,BEGIN_POST,END_POST from roadway_Events</procde
 		<dataLineage>
 			<prcStep>
 				<stepDesc>This dataset was created using ESRI event mapping. The route system is the Transportation Data and Analytics' linear referencing system (LRS). The event source data are from the roadway table in Oracle. The query used to generate the road_status shapefile is: select Shape,ROADWAY,ROAD_STATUS,BEGIN_POST,END_POST from roadway_Events</stepDesc>
-				<stepDateTm>20180818</stepDateTm>
+				<stepDateTm>20190817</stepDateTm>
 			</prcStep>
 		</dataLineage>
 	</dqInfo>
@@ -1756,6 +1756,6 @@ ICA8L2xpbmVhZ2U+DQogIDwvZGF0YXF1YWw+DQo8L21ldGFkYXRhPg==</Data>
 		</RefSystem>
 	</refSysInfo>
 	<spatRepInfo>
-		<VectSpatRep><geometObjs Name="road_status"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">16728</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo>
-	<mdDateSt Sync="TRUE">20180818</mdDateSt>
+		<VectSpatRep><geometObjs Name="road_status"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">17088</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo>
+	<mdDateSt Sync="TRUE">20190817</mdDateSt>
 </metadata>
